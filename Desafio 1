@@ -1,1 +1,43 @@
+1. Faça um programa para solicitar um número, calcular e informar o seu dobro
+
+num = int(input('Digite um número:'))
+dobro = num*2
+print('O dobro do {} é {}.'.format(num,dobro))
+
+2. Elabore um programa para ler um número, calcular e escrever o quadrado deste número
+num=int(input('Digite um numero:'))
+quad=(num**2)
+print ('O Quadrado do {} é {}.' .format (num, quad))
+
+3. Crie um programa para ler dois números e informar a média aritmética e a metade da diferença entre eles
+
+num1=int(input("Digite o primeiro número:"))
+num2=int(input("Digite o segundo número:"))
+med=(num1+num2)/2
+dif=(num1-num2)/2
+print('A média aritimética do número {} e o número {} é {:.0f} e a metade da diferença entre eles é {:.0f}.' .format(num1, num2, med, dif))
+
+
+4. Faça um programa para solicitar o nome e o salário de um empregado. Calcular e descontar 8% do seu salário. Informar o valor do desconto e o salário líquido a receber.
+
+nome=input('Digite o nome.')
+sal=float(input('Digite o salário.'))
+desc=sal*0.08
+saliq=sal-desc
+print('O salário líquido de {} é R${:.2f} e foi descontado R${:.2f}.' .format(nome, saliq, desc))
+
+
+5. Crie um programa para ler a matrícula, o nome e o salário de dois empregados. Descontar 5% no salário do primeiro e acrescentar 9% no salário do segundo. Informar: o valor do desconto do primeiro; o valor do acréscimo do segundo; o salário final do primeiro; o salário final do segundo.
+
+mat1=input('Digite a matrícula do funcionário 1.')
+mat2=input('Digite a matrícula do funcionário 2.')
+nome1=input('Digite o nome do funcionário 1')
+nome2=input('Digite o nome do funcionário 2')
+sal1=float(input('Digite o salário do primeiro funcionário'))
+sal2=float(input('Digite o salário do segundo funcionário'))
+desc1=sal1*0.05
+saliq1=sal1-desc1
+acre=sal2*0.09
+saliq2=sal2+acre
+print('O salário líquido do(a) {} é R${:.2f} e foi descontado R${:.2f} e o salario liquido do(a) {} é de R$ {:.2f} e foi acrescentado R$ {:.2f}'.format(nome1, saliq1, desc1, nome2, saliq2, acre))
 
