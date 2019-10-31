@@ -1,0 +1,17 @@
+# 01 - Faça um programa que leia dois valores inteiro e ao final informe a soma, a subtração, a multiplicação e a divisão dos dois números:
+
+num1=int(input('Digite o primeiro número:'))
+num2=int(input('Digite o segundo número:'))
+soma=num1+num2
+sub=num1-num2
+mul=num1*num2
+div=num1/num2
+print('A soma dos números é {}, a subtração é {}, a multiplicação é {} e a divisão é {}.' .format (soma,sub,mul,div))
+
+# 02 - Faça um programa que leia o nome e o valor de um produto calcule 10% de desconto e ao final informe o valor do desconto e o valor final do produto.
+
+nprod=input('Digite o nome')
+vprod=float(input('Digite o valor do produto'))
+des=vprod*0.1
+vf=vprod-des
+print('O produto {}, custa R${:.2f} e foi dado 10% de desconto e com isso ficou R${:.2f}.'.format(nprod,vprod,vf))
