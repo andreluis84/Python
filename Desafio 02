@@ -1,0 +1,67 @@
+#1. Faça um programa que dado o valor da temperatura em graus FARENHEIT,calcular e escrever o valor da temperatura em graus CELSIUS. Fórmula: C = 5/9 * (F - 32)
+
+temf=float(input('Digite a temperatura em Farenheit:'))
+C = 5/9 *(temf - 32)
+print('A temperatura {:.1f} em Farenheit equivale a temperatura {:.1f} em Celsius.'.format(temf, C))
+
+#2.Faça um programa para solicitar o código, a quantidade de alunos do sexo masculino, a quantidade de alunos do sexo feminino e a quantidade de alunos aprovados de uma determinada turma. Calcular e informar: a porcentagem de alunos do sexo masculino; a porcentagem de alunos do sexo feminino; a porcentagem de alunos reprovados; o total de alunos da turma.
+
+cod=input("Digite o Código")
+am=int(input('Digite a quantidade de alunos do sexo masculino'))
+af=int(input('Digite a quantidade de aluno do sexo feminino'))
+ap=int(input('Digite a quantidade de alunos aprovados'))
+tot = am+af
+pm = (tot*am)/100
+pf = (tot*af)/100
+ar = tot-ap
+pr = (tot*ar)/100
+print('O turma {} que tem {}% alunos masculinos e {}% alunos femininos, tem {}% reprovados com o total de {}.'.format (cod,pm,pf,pr,tot))
+
+
+#3. O camelô Zé da banca vende diariamente, games, calculadoras e canetas. Faça um programa para solicitar o total de games, o total de calculadoras e o total de canetas vendidas ao término do dia. O programa deve solicitar também o preço de cada um dos produtos e ao final calcular e informar o total do faturamento com cada produto e o faturamento total.
+
+gam=int(input('Digite a quantidade de games vendidos.'))
+vgam=float(input('Digite o valor do game'))
+cal=int(input('Digite a quantidade de calculadoras vendidas'))
+vcal=float(input('Digite o valor da calculadora'))
+pen=int(input('Digite a quantidade de canetas vendidas'))
+vpen=float(input('Digite o valor da caneta'))
+qgam=gam*vgam
+qcal=cal*vcal
+qpen=pen*vpen
+qtot=qgam+qcal+qpen
+print('Foram vendidos R${:.2f} em games, R${:.2f} em calculadoras, R${:.2f} em canetas, tendo faturado o total de R${:.2f} de produtos.'.format(qgam,qcal,qpen,qtot))
+
+
+#4. Elabore um programa para solicitar o nome de uma equipe de futebol, a quantidade de derrotas, empates e vitórias obtidas por ela no campeonato. Calcular e informar: a quantidade de pontos ganhos e a quantidade de pontos perdidos.
+
+nome=input('Digite o nome da equipe.')
+der=int(input('Digite a quantidade de derrotas do time.'))
+vit=int(input('Digite a quantidade de vitória do time.'))
+emp=int(input('Digite a quantidade de empates do time.'))
+jogo=int(input('Digite a quantidade de jogos no campeonato'))
+#pvit=3
+#pemp=1
+#pder=0
+#totpcam = part*3
+calv=vit*3
+cale=emp*1
+cald=-3
+tj=jogo*3
+pontganho=calv+cale
+ponperder=tj-pontganho
+print('A equipe {} ganhou {} pontos e deixou de ganhar {} pontos'.format(nome,pontganho,ponperder ))
+
+# 5. Elabore um programa que calcule a média de quilômetros por litro de um determinado veículo. Dados: quilometragem inicial, quilometragem final, quantidade de litros gastos.
+Fórmulas:
+quilômetros rodados = quilometragem final - quilometragem inicial;
+média = quilômetros rodados/litros gastos.
+
+# 5. Elabore um programa que calcule a média de quilômetros por litro de um determinado veículo. Dados: quilometragem inicial, quilometragem final, quantidade de litros gastos. Fórmulas: quilômetros  rodados = quilometragem final - quilometragem inicial; média = quilômetros rodados/litros gastos.
+
+km0=float(input('Digite o Km inicial:'))
+kmf=float(input('Digite o km final:'))
+ltsg=float(input('Digite a quantidade de combustível:'))
+kmp=kmf-km0
+kml=kmp/ltsg
+print('O Km percorrido foi {:.2f} e Foi usado {:.2f} litros, com isso a média de consulmo é de {:.2f}km por litro(s)'.format(kmp,ltsg,kml))
